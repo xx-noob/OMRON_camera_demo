@@ -297,8 +297,7 @@ void CameraWorker::UpdateCameraImage(IStImage* pIStImage)
             {
                 displayMat = inputMat.clone();  // 不需要转换
             }
-            // 调整图像大小以适应 QLabel 的尺寸
-            cv::resize(displayMat, displayMat, cv::Size(640, 400));
+           
            /* qDebug() << "Pixel values: " << QString::number(displayMat.at<cv::Vec3b>(0, 0)[0]) << ", "
                 << QString::number(displayMat.at<cv::Vec3b>(0, 0)[1]) << ", "
                 << QString::number(displayMat.at<cv::Vec3b>(0, 0)[2]);*/
